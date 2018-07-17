@@ -38,7 +38,8 @@ class ViewController: UIViewController, UIWebViewDelegate {
     }
     
     func exampleFunction(request: URLRequest) -> Bool{
-        webView.stringByEvaluatingJavaScript(from: "changeName()")
+        let string = "isso é um teste"
+        webView.stringByEvaluatingJavaScript(from: "changeName('\(string)')")
         return true
     }
     
