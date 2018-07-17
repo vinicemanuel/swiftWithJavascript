@@ -11,6 +11,7 @@ import JavaScriptCore
 
 class ViewController: UIViewController, UIWebViewDelegate {
     @IBOutlet var webView: UIWebView!
+    let string = "isso é um teste 2"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,37 +19,24 @@ class ViewController: UIViewController, UIWebViewDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-//        if let url = Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "web"){
         if let url = Bundle.main.url(forResource: "example", withExtension: "html", subdirectory: "web"){
             print(url)
-//            let fragUrl = URL(fileURLWithPath: "#Frag", relativeTo: url)
             let request = URLRequest(url: url)
             webView.loadRequest(request)
         }
     }
     
+    @IBAction func buttonPressed(_ sender: Any) {
+        webView.stringByEvaluatingJavaScript(from: "changeName('\(string)')")
+    }
+    
     func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         NSLog("request: \(request)")
-//        return exampleIndex(request: request)
-        return exampleFunction(request: request)
-    }
-    
-    func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
-        print("error message: \(error.localizedDescription)")
-    }
-    
-    func exampleFunction(request: URLRequest) -> Bool{
-        let string = "isso é um teste"
-        webView.stringByEvaluatingJavaScript(from: "changeName('\(string)')")
-        return true
-    }
-    
-    func exampleIndex(request: URLRequest) -> Bool{
+        
         if let scheme = request.url?.scheme {
             if scheme == "mike" {
                 // now we can react
-                
-                NSLog("we got a mike request: \(scheme)")
+                print("we got a mike request: \(scheme)")
                 
                 if let result = webView.stringByEvaluatingJavaScript(from: "MIKE.someJavascriptFunc()") {
                     print("result: \(result)")
@@ -59,6 +47,10 @@ class ViewController: UIViewController, UIWebViewDelegate {
             }
         }
         return true
+    }
+    
+    func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
+        print("error message: \(error.localizedDescription)")
     }
 }
 
