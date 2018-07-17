@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC9A410B20FE26570018B578 /* web in Resources */ = {isa = PBXBuildFile; fileRef = EC9A410A20FE26570018B578 /* web */; };
 		ECBE2F8B20F6683E009E3E5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBE2F8A20F6683E009E3E5C /* AppDelegate.swift */; };
 		ECBE2F8D20F6683E009E3E5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBE2F8C20F6683E009E3E5C /* ViewController.swift */; };
 		ECBE2F9020F6683E009E3E5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECBE2F8E20F6683E009E3E5C /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		ECBE2F9520F66847009E3E5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECBE2F9320F66847009E3E5C /* LaunchScreen.storyboard */; };
 		ECBE2FA020F66848009E3E5C /* webViewTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBE2F9F20F66848009E3E5C /* webViewTestTests.swift */; };
 		ECBE2FAB20F66848009E3E5C /* webViewTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBE2FAA20F66848009E3E5C /* webViewTestUITests.swift */; };
+		ECBE2FBF20F672BC009E3E5C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECBE2FBE20F672BC009E3E5C /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +36,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC9A410A20FE26570018B578 /* web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = web; sourceTree = "<group>"; };
 		ECBE2F8720F6683E009E3E5C /* webViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = webViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECBE2F8A20F6683E009E3E5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECBE2F8C20F6683E009E3E5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ECBE2F8F20F6683E009E3E5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECBE2F9120F66847009E3E5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECBE2F9420F66847009E3E5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		ECBE2F9620F66847009E3E5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECBE2F9B20F66848009E3E5C /* webViewTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = webViewTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECBE2F9F20F66848009E3E5C /* webViewTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webViewTestTests.swift; sourceTree = "<group>"; };
 		ECBE2FA120F66848009E3E5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECBE2FA620F66848009E3E5C /* webViewTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = webViewTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECBE2FAA20F66848009E3E5C /* webViewTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webViewTestUITests.swift; sourceTree = "<group>"; };
 		ECBE2FAC20F66848009E3E5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECBE2FBE20F672BC009E3E5C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +100,11 @@
 		ECBE2F8920F6683E009E3E5C /* webViewTest */ = {
 			isa = PBXGroup;
 			children = (
-				ECBE2F8A20F6683E009E3E5C /* AppDelegate.swift */,
-				ECBE2F8C20F6683E009E3E5C /* ViewController.swift */,
-				ECBE2F8E20F6683E009E3E5C /* Main.storyboard */,
-				ECBE2F9120F66847009E3E5C /* Assets.xcassets */,
-				ECBE2F9320F66847009E3E5C /* LaunchScreen.storyboard */,
-				ECBE2F9620F66847009E3E5C /* Info.plist */,
+				EC9A410A20FE26570018B578 /* web */,
+				ECBE2FBB20F668AB009E3E5C /* controllers */,
+				ECBE2FBA20F6689F009E3E5C /* views */,
+				ECBE2FB920F6687A009E3E5C /* resource */,
+				ECBE2FB820F6685F009E3E5C /* ios */,
 			);
 			path = webViewTest;
 			sourceTree = "<group>";
@@ -123,6 +125,40 @@
 				ECBE2FAC20F66848009E3E5C /* Info.plist */,
 			);
 			path = webViewTestUITests;
+			sourceTree = "<group>";
+		};
+		ECBE2FB820F6685F009E3E5C /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				ECBE2FBE20F672BC009E3E5C /* Info.plist */,
+				ECBE2F8A20F6683E009E3E5C /* AppDelegate.swift */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		ECBE2FB920F6687A009E3E5C /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				ECBE2F9120F66847009E3E5C /* Assets.xcassets */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		ECBE2FBA20F6689F009E3E5C /* views */ = {
+			isa = PBXGroup;
+			children = (
+				ECBE2F8E20F6683E009E3E5C /* Main.storyboard */,
+				ECBE2F9320F66847009E3E5C /* LaunchScreen.storyboard */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		ECBE2FBB20F668AB009E3E5C /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ECBE2F8C20F6683E009E3E5C /* ViewController.swift */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +267,8 @@
 			files = (
 				ECBE2F9520F66847009E3E5C /* LaunchScreen.storyboard in Resources */,
 				ECBE2F9220F66847009E3E5C /* Assets.xcassets in Resources */,
+				EC9A410B20FE26570018B578 /* web in Resources */,
+				ECBE2FBF20F672BC009E3E5C /* Info.plist in Resources */,
 				ECBE2F9020F6683E009E3E5C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,7 +470,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XCZ3379F8W;
-				INFOPLIST_FILE = webViewTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/webViewTest/ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +488,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XCZ3379F8W;
-				INFOPLIST_FILE = webViewTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/webViewTest/ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
